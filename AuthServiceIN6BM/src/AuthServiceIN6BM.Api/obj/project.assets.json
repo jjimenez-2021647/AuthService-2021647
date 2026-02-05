@@ -4237,11 +4237,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\AuthServiceIN6BM.Api.csproj",
+      "projectUniqueName": "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\AuthServiceIN6BM.Api.csproj",
       "projectName": "AuthServiceIN6BM.Api",
-      "projectPath": "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\AuthServiceIN6BM.Api.csproj",
+      "projectPath": "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\AuthServiceIN6BM.Api.csproj",
       "packagesPath": "C:\\Users\\Informatica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\obj\\",
+      "outputPath": "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Informatica\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -4256,11 +4256,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj": {
-              "projectPath": "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj"
+            "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj": {
+              "projectPath": "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Application\\AuthServiceIN6BM.Application.csproj"
             },
-            "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Informatica\\Desktop\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj"
+            "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj": {
+              "projectPath": "C:\\AuthService-2021647\\AuthServiceIN6BM\\src\\AuthServiceIN6BM.Persistence\\AuthServiceIN6BM.Persistence.csproj"
             }
           }
         }

@@ -1,5 +1,5 @@
 using System;
-using Microsoft.Extensions.Logginf;
+using Microsoft.Extensions.Logging;
 
 namespace AuthServiceIN6BM.Application.Extensions;
 
@@ -12,7 +12,7 @@ public static partial class LoggerExtensions
         Message = "User {Username} registered siccessfuly"
     )]
 
-    public statis partial void LogUserRegistered(this ILogger logger, string username);
+    public static partial void LogUserRegistered(this ILogger logger, string username);
 
     [LoggerMessage(
         EventId = 1002,
@@ -20,7 +20,7 @@ public static partial class LoggerExtensions
         Message = "User login succeeded"
     )]
 
-    public statis partial void LogUserLoggedIn(this ILogger logger);
+    public static partial void LogUserLoggedIn(this ILogger logger);
 
     [LoggerMessage(
         EventId = 1003,
@@ -28,7 +28,7 @@ public static partial class LoggerExtensions
         Message = "Failed login attempt"
     )]
 
-    public statis partial void LogFailedLoginAttempt(this ILogger logger);
+    public static partial void LogFailedLoginAttempt(this ILogger logger);
 
     [LoggerMessage(
         EventId = 1004,
@@ -36,7 +36,7 @@ public static partial class LoggerExtensions
         Message = "Registration rejected: email already exists"
     )]
 
-    public statis partial void LogRegistrationWithExistingEmail(this ILogger logger);
+    public static partial void LogRegistrationWithExistingEmail(this ILogger logger);
 
     [LoggerMessage(
         EventId = 1005,
@@ -44,7 +44,7 @@ public static partial class LoggerExtensions
         Message = "Registration rejected: username already exists"
     )]
 
-    public statis partial void LogRegistrationWithExistingUsername(this ILogger logger);
+    public static partial void LogRegistrationWithExistingUsername(this ILogger logger);
 
     [LoggerMessage(
         EventId = 1006,
@@ -52,5 +52,5 @@ public static partial class LoggerExtensions
         Message = "Error uploading profile image"
     )]
 
-    public statis partial void LogImageUploadError(this ILogger logger);
+    public static partial void LogImageUploadError(this ILogger logger);
 }

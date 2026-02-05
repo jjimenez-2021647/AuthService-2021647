@@ -1,10 +1,10 @@
-using AuthServiceIN6BM.Applicatoin.Interfaces;
+using AuthServiceIN6BM.Application.Interfaces;
 
 namespace AuthServiceIN6BM.Api.Models;
 
 public class FormFileAdapter : IFileData
 {
-    private readonly IFromFile _formFile;
+    private readonly IFormFile _formFile;
     private byte[]? _data;
 
     public FormFileAdapter(IFormFile formFile)

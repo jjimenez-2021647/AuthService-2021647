@@ -8,7 +8,7 @@ namespace AuthServiceIN6BM.Persistence.Data;
 
 public static class DataSeeder
 {
-    public static async Task SeedAsyn(ApplicationDbContext context)
+    public static async Task SeedAsync(ApplicationDbContext context)
     {
         if (!context.Roles.Any())
         {
