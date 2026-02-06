@@ -29,7 +29,7 @@ public static class UuidGenerator
 
     public static string GenerateRoleId()
     {
-        return $"rol_{GenerateRoleId()}";
+        return $"rol_{GenerateShortUUID()}";
     }
 
     public static bool IsValidUserId(string? id)

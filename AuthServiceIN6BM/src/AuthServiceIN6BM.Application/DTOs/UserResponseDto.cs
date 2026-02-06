@@ -9,6 +9,8 @@ public class UserResponseDto
 
     public string Surname { get; set; } = string.Empty;
 
+    public string Username { get; set; } = string.Empty;
+
     public string Email { get; set; } = string.Empty;
 
     public string ProfilePicture { get; set; } = string.Empty;
@@ -21,8 +23,8 @@ public class UserResponseDto
 
     public bool IsEmailVerified { get; set; }
     
-    public DateTime CreateAt { get; set; }
+    public DateTime CreatedAt { get; set; }
 
-    public DateTime UpdateAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
 
 }

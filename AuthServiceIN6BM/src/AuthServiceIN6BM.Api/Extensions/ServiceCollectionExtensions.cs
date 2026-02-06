@@ -1,4 +1,6 @@
 using AuthServiceIN6BM.Domain.Interfaces;
+using AuthServiceIN6BM.Application.Interfaces;
+using AuthServiceIN6BM.Application.Services;
 using AuthServiceIN6BM.Persistence.Data;
 using AuthServiceIN6BM.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -9,11 +11,18 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddDbContext<ApplicationDbContext>(options => 
+        services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"))
-                .UseSnakeCaseNamingConventions());
+                .UseSnakeCaseNamingConvention());
+
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IRoleRepository, RoleRepository>();
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IUserManagementService, UserManagementService>();
+        services.AddScoped<IPasswordHashService, PasswordHashService>();
+        services.AddScoped<IJwtTokenService, JwtTokenService>();
+        services.AddScoped<ICloudinaryService, CloudinaryService>();
+        services.AddScoped<IEmailService, EmailService>();
 
         services.AddHealthChecks();
 

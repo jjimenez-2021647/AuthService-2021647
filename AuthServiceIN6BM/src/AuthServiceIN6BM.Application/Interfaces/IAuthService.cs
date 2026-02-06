@@ -8,8 +8,8 @@ public interface IAuthService
     Task<RegisterResponseDto> RegisterAsync(RegisterDto registerDto);
     Task<AuthResponseDto> LoginAsync(LoginDto loginDto);
     Task<EmailResponseDto> VerifyEmailAsync(VerifyEmailDto verifyEmailDto);
-    Task<EmailResponseDto> ResendVerificationAsync(ResendVerificationDto resendVerificationDto);
+    Task<EmailResponseDto> ResendVerificationEmailAsync(ResendVerificationDto resendVerificationDto);
     Task<EmailResponseDto> ForgotPasswordAsync(ForgotPasswordDto forgotPasswordDto);
     Task<EmailResponseDto> ResetPasswordAsync(ResetPasswordDto resetPasswordDto);
-    Task<UserResponseDto> GetUserByAsync(string userId);
+    Task<UserResponseDto?> GetUserByIdAsync(string userId);
 }
